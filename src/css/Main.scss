@@ -1,0 +1,180 @@
+// Colors
+
+$primary: #4575bd;
+$blue: #2c3e50;
+$red: #e74c3c;
+
+// html elements 
+html {
+    font-size: 14px;
+}
+
+input {
+    height: 35px;
+    color: $blue;
+    min-width: 300px;
+}
+
+body {
+    background-color: $primary;
+    font-size: 1rem;
+    font-family: 'Chivo', sans-serif;
+    padding-top: 80px;
+}
+
+a, a:hover, a:focus, a:visited, a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+// Helpers
+
+.mx-auto, .ml-auto {
+    margin-left: auto;
+}
+
+.mx-auto, .mr-auto {
+    margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-input, .form-label {
+    width: 100%;
+    font-weight: 700;
+}
+
+.form-input {
+    color: $blue;
+}
+
+.form-label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-weight: 400;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.bg-primary {
+    background-color: $primary;
+}
+
+.bg-red {
+    background-color: $red;
+}
+
+.bg-blue {
+    background-color: $blue;
+}
+
+.cl-primary {
+    color: $primary;
+}
+
+.cl-red {
+    color: $red;
+}
+
+.cl-blue {
+    color: $blue;
+}
+
+.cl-white {
+    color: #fff;
+}
+
+// Buttons 
+
+.btn {
+    width: 300px;
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    transition: .3s;
+    text-transform: uppercase;
+    border-radius: 5px;
+
+    &.btn-primary {
+        color: #fff;
+        background-color: $red;
+        border-color: $red;
+
+        &:hover {
+            background-color: #fff;
+            color: $red;
+        }
+    }
+
+    &.btn-secondary {
+        background-color: $blue;
+        color: #fff;
+        border-color: $blue;
+    }
+}
+
+/*  -----------------------------------------------
+    General
+    ----------------------------------------------- */
+
+nav {
+    height: 50px;
+    padding: 15px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.75);
+    background-color: rgba(69, 117, 189, .4);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    img {
+        width: 40px;
+    }
+}
+
+/*  -----------------------------------------------
+    LOGIN
+    ----------------------------------------------- */
+
+.login {
+
+    nav {
+        height: 50px;
+        padding: 15px 0;
+        display: flex;
+    }
+    
+    .login-form {
+        min-height: calc(100vh - 130px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
