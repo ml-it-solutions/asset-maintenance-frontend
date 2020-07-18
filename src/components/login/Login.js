@@ -1,6 +1,7 @@
 import React from 'react';
 import LoggedOutNavigation from '../navigation/LoggedOutNavigation'
 import TextInput from '../shared/TextInput';
+import { Link } from 'react-router-dom';
 
 export default () => {
     return (
@@ -13,7 +14,7 @@ export default () => {
                     <TextInput type="text" className="form-group" name="username" label="Username" />
                     <TextInput type="password" className="form-group" name="password" label="Password" />
                     <div className="my-3 d-flex"><a className="cl-white ml-auto" href="#">Forgot Password?</a></div>
-                    <a href="/dashboard" className="btn btn-primary mx-auto">Login</a>
+                    <Link to="/dashboard" className="btn btn-primary mx-auto">Login</Link>
                 </div>
             </div>
         </div>
