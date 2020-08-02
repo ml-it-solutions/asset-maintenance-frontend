@@ -1,0 +1,26 @@
+html {
+  font-size: 14px;
+}
+
+.login, .register {
+  background-image: url("/images/login-bg.jpg");
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.login .login-form, .login .register-form, .register .login-form, .register .register-form {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.login .login-form > .row, .login .register-form > .row, .register .login-form > .row, .register .register-form > .row {
+  height: 100vh;
+}
+
+.login h4, .register h4 {
+  margin-bottom: 50px;
+}
+
+.register {
+  background-image: none;
+}
+/*# sourceMappingURL=App.css.map */
