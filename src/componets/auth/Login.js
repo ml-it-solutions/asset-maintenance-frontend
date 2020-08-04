@@ -21,13 +21,13 @@ class Login extends Component {
 
     componentDidMount() {
         if (this.props.auth.isAuthenticated) {
-        this.props.history.push('/dashboard');
+        this.props.history.push('/');
         }
     }
 
     componentWillReceiveProps(nextProps) {
         if (nextProps.auth.isAuthenticated) {
-        this.props.history.push('/dashboard');
+        this.props.history.push('/');
         }
 
         if (nextProps.errors) {
@@ -62,10 +62,10 @@ class Login extends Component {
                                     <h1 className="text-center">WELCOME</h1>
                                     <h4 className="text-center">Login to get started</h4>
                                     <form onSubmit={this.onSubmit}>
-                                        <TextInput className="form-group" label="Username" type="text" name="username"/>
-                                        <TextInput className="form-group" label="Password" type="password" name="password"/>
+                                        <TextInput className="form-group" label="Username" type="text" name="username" value={this.state.username} onChange={this.onChange}/>
+                                        <TextInput className="form-group" label="Password" type="password" name="password" value={this.state.password} onChange={this.onChange}/>
                                         <div className="form-group">
-                                            <button type="submit" className="btn btn-primary btn-block">LOGIN</button>
+                                            <input type="submit" className="btn btn-primary btn-block mt-4" />
                                         </div>
                                     </form>
                                 </div>
