@@ -60,7 +60,7 @@ class Login extends Component {
                             <div className="row align-items-center">
                                 <div className="col-8 mx-auto">
                                     <h1 className="text-center">WELCOME</h1>
-                                    <h4 className="text-center">Login to get starting</h4>
+                                    <h4 className="text-center">Login to get starting </h4>
                                     <form onSubmit={this.onSubmit}>
                                         <TextInput className="form-group" label="Username" type="text" name="username" value={this.state.username} onChange={this.onChange}/>
                                         <TextInput className="form-group" label="Password" type="password" name="password" value={this.state.password} onChange={this.onChange}/>
