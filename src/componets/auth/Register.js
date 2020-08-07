@@ -15,6 +15,7 @@ class Register extends Component {
         email: '',
         password: '',
         password2: '',
+        active: '',
         errors: {}
         };
 
@@ -34,7 +35,8 @@ class Register extends Component {
             lname: this.state.lname,
             email: this.state.email,
             password: this.state.password,
-            password2: this.state.password2
+            password2: this.state.password2,
+            active: this.state.active
         };
 
         this.props.registerUser(newUser);
@@ -58,8 +60,12 @@ class Register extends Component {
                                     <TextInput className="form-group col-12 col-md-6" label="Email Address" type="text" name="email" value={this.state.email} onChange={this.onChange}/>
                                     <TextInput className="form-group col-12 col-md-6" label="Password" type="password" name="password" value={this.state.password} onChange={this.onChange}/>
                                     <TextInput className="form-group col-12 col-md-6" label="Confirm Password" type="password" name="password2" value={this.state.password2} onChange={this.onChange}/>
-                                    <div className="form-group col-10 col-md-6 mx-auto">
-                                        <input type="checkbox" name="active" value={this.state.active} onChange={this.onChange}/> <label htmlFor="active">Active</label>
+                                    <div className="form-group col-12 col-md-6">
+                                        <label class="form-label" for="password2">Active user</label>
+                                        <select name="active" id="active" class="form-control" value={this.state.active} onChange={this.onChange}>
+                                            <option value="true">YES</option>
+                                            <option value="false">NO</option>
+                                        </select>
                                     </div>
                                     <div className="form-group col-10 col-md-6 mx-auto">
                                         <button className="btn btn-primary btn-block">REGISTER</button>
