@@ -15,7 +15,7 @@ class Register extends Component {
         email: '',
         password: '',
         password2: '',
-        active: '',
+        isActive: '',
         errors: {}
         };
 
@@ -36,7 +36,7 @@ class Register extends Component {
             email: this.state.email,
             password: this.state.password,
             password2: this.state.password2,
-            active: this.state.active
+            isActive: this.state.isActive
         };
 
         this.props.registerUser(newUser);
@@ -62,7 +62,7 @@ class Register extends Component {
                                     <TextInput className="form-group col-12 col-md-6" label="Confirm Password" type="password" name="password2" value={this.state.password2} onChange={this.onChange}/>
                                     <div className="form-group col-12 col-md-6">
                                         <label class="form-label" for="password2">Active user</label>
-                                        <select name="active" id="active" class="form-control" value={this.state.active} onChange={this.onChange}>
+                                        <select name="isActive" id="isActive" class="form-control" value={this.state.isActive} onChange={this.onChange}>
                                             <option value="true">YES</option>
                                             <option value="false">NO</option>
                                         </select>
